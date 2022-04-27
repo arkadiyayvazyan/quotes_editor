@@ -1,0 +1,11 @@
+<%# app/views/quotes/new.html.erb %>
+
+<main class="container">
+    <%= link_to sanitize("&larr; Back to quotes"), quote_path(@quote) %>
+
+    <div class="header">
+        <h1>Edit quotes/h1>
+    </div>
+
+    <%= render "form", quote: @quote >
+</main>
